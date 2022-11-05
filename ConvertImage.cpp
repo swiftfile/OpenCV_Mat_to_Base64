@@ -126,7 +126,7 @@ std::string ImagemConverter::base64_decode(std::string const& encoded_string)
 string ImagemConverter::mat2str(const Mat& m)
 {
 	int params[3] = {0};
-	params[0] = CV_IMWRITE_JPEG_QUALITY;
+	params[0] = IMWRITE_JPEG_QUALITY;
 	params[1] = 100;
 
 	vector<uchar> buf;
